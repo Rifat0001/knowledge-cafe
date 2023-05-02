@@ -6,7 +6,7 @@ const Blog = (props) => {
     const handleMarkRead = props.handleMarkRead;
     const handleTimeCount = props.handleTimeCount;
     return (
-        <div className='mb-16'>
+        <div className='md:mb-16 mb-2'>
             <div className="card bg-base-100 ">
                 <figure><img className="" src={cover_img} alt="Shoes" /></figure>
                 <div className="card-body">
@@ -14,12 +14,12 @@ const Blog = (props) => {
                         <div className="flex justify-start items-center gap-4">
                             <div className="left">
                                 <div >
-                                    <img className="w-20 h-20 rounded-full" src={author_img} />
+                                    <img className="md:w-20 md:h-20 w-12 h-12 rounded-full" src={author_img} />
                                 </div>
                             </div>
                             <div>
-                                <p className="text-xl font-semibold" >{author_name}</p>
-                                <p className="text-sm ">Mar 14 (4 Days ago)</p>
+                                <p className="md:text-xl text-xs md:font-semibold font-bold" >{author_name}</p>
+                                <p className="md:text-sm text-xs">Mar 14 (4 Days ago)</p>
                             </div>
                         </div>
                         <div className="flex justify-start items-center">
@@ -31,7 +31,7 @@ const Blog = (props) => {
                             </div>
                         </div>
                     </div>
-                    <h1 className="card-title text-3xl font-bold ">
+                    <h1 className="card-title md:text-3xl text-xl font-bold ">
                         {blog_title}
                     </h1>
                     <p>#beginners #programming</p>

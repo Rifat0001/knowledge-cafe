@@ -21,7 +21,7 @@ const Home = () => {
         setTime(newData);
     }
     return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 px-16">
+        <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 md:px-16 px-4">
             <div className="md:col-span-2 sm:col-span-1">
                 {
                     blogs.map(blog => <Blog key={blog.id} handleTimeCount={handleTimeCount} handleMarkRead={handleMarkRead} blog={blog}></Blog>)

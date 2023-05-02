@@ -3,7 +3,7 @@
 const Header = () => {
     return (
         <div >
-            <div className="navbar bg-base-100 container mx-auto px-12">
+            <div className="navbar bg-base-100 container mx-auto md:px-12">
                 <div className="flex-1">
                     <a className="btn btn-ghost normal-case text-3xl font-bold ">Blog Cafe</a>
                 </div>
@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
 
             </div>
-            <div className='mx-16 my-4'>
+            <div className='md:mx-16 mx-6 my-4'>
                 <hr />
             </div>
         </div>
