@@ -22,10 +22,10 @@ const Blog = (props) => {
                         </div>
                         <div className="flex justify-start items-center">
                             <div className="text">
-                                <p className="text-sm me-2">{read_time} min read</p>
+                                <p className="text-sm me-4">{read_time} min read</p>
                             </div>
                             <div className="icon">
-                                <button className='text-secondary'><FontAwesomeIcon icon={faBookmark} /></button>
+                                <button className='text-primary'><FontAwesomeIcon icon={faBookmark} /></button>
                             </div>
                         </div>
                     </div>
@@ -33,6 +33,10 @@ const Blog = (props) => {
                         {blog_title}
                     </h1>
                     <p>#beginners #programming</p>
+                    <div className='text-start'>
+                        <button className='underline text-primary font-semibold '>Mark as read</button>
+                    </div>
+
                     <hr />
                 </div>
             </div>
