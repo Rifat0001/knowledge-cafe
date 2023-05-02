@@ -1,7 +1,7 @@
 // import React from 'react';
 import { useEffect, useState } from 'react';
-import Blogs from '../Blogs/Blogs';
 import Carts from '../Carts/Carts';
+import Blog from '../Blog/Blog';
 
 const Home = () => {
     const [blogs, setBlogs] = useState([]);
@@ -12,11 +12,11 @@ const Home = () => {
     }, [])
     return (
         <div className="grid grid-cols-3 gap-4 px-16">
-            <Blogs>
+            <div className="col-span-2">
                 {
-                    blogs.map(blog => <h1 key={blog.id}>hi</h1>)
+                    blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
                 }
-            </Blogs>
+            </div>
             <Carts></Carts>
         </div>
     );
