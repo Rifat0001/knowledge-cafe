@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 const Blog = (props) => {
     const { id, author_name, blog_title, cover_img, author_img, read_time } = props.blog;
+    const handleMarkRead = props.handleMarkRead;
+    const handleTimeCount = props.handleTimeCount;
     return (
         <div className='mb-16'>
             <div className="card bg-base-100 ">
@@ -25,7 +27,7 @@ const Blog = (props) => {
                                 <p className="text-sm me-4">{read_time} min read</p>
                             </div>
                             <div className="icon">
-                                <button className='text-primary'><FontAwesomeIcon icon={faBookmark} /></button>
+                                <button className='text-primary' onClick={() => handleMarkRead(props.blog)}><FontAwesomeIcon icon={faBookmark} /></button>
                             </div>
                         </div>
                     </div>
@@ -34,7 +36,7 @@ const Blog = (props) => {
                     </h1>
                     <p>#beginners #programming</p>
                     <div className='text-start'>
-                        <button className='underline text-primary font-semibold '>Mark as read</button>
+                        <button onClick={() => handleTimeCount(props.blog)} className='underline text-primary font-semibold '>Mark as read</button>
                     </div>
 
                     <hr />
