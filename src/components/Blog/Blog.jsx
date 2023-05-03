@@ -4,7 +4,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 const Blog = (props) => {
     const { id, author_name, blog_title, cover_img, author_img, read_time } = props.blog;
     const handleBookMarked = props.handleBookMarked;
-    const handleMarkasRead = props.handleMarkasRead;
+    const handleReadTime = props.handleReadTime;
     return (
         <div className='md:mb-16 mb-2'>
             <div className="card bg-base-100 ">
@@ -36,7 +36,7 @@ const Blog = (props) => {
                     </h1>
                     <p>#beginners #programming</p>
                     <div className='text-start'>
-                        <button onClick={() => handleMarkasRead(props.blog)} className='underline text-primary font-semibold '>Mark as read</button>
+                        <button onClick={() => handleReadTime(props.blog.read_time)} className='underline text-primary font-semibold '>Mark as read</button>
                     </div>
 
                     <hr />
