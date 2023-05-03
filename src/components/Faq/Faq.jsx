@@ -47,7 +47,7 @@ const Faq = () => {
                         4.How Does React work?
                     </div>
                     <div className="collapse-content">
-                        <p>Answer: React is a JavaScript library developed by FaceBook. It is used for building interactive user interface and writing code using React is very efficient. It has some key features like JSX, Virtual DOM, Props, State Management etc. Besides, it is easy to use, easier component writing, high performance, SEO friendly etc. Whenever a React component returns an element, the Virtual DOM will update the real DOM to match. In this way react work efficiently.</p>
+                        <p>Answer: React is a JavaScript library (not a framework) that creates user interfaces (UIs) in a predictable and efficient way using declarative code. You can use it to help build single page applications and mobile apps, or to build complex apps if you utilise it with other libraries.</p>
                     </div>
                 </div>
             </div>
